@@ -80,15 +80,15 @@ html,body{
   #dropdown-list{
     position: absolute;
     right: 0px;
-    z-index: 1;
-    min-width: 180px;    
+    z-index: 1;   
     background-color: #ccc;
     border-radius: 5px;
     box-shadow: 5px 5px 2px #aaa;
     display: none;
+    overflow: hidden;
   } 
   
-  #dropdown-list a {
+  #dropdown-list ul li {
     padding: 10px 26px;
     display: block;
   }
@@ -105,9 +105,13 @@ html,body{
   }
   
   
-  #dropdown-list a:hover {
+#dropdown-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+  #dropdown-list ul li:hover {
     background-color: grey;
-    border-radius: 5px;
   }
   
   /* End- responsive button style*/
